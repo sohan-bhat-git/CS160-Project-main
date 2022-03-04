@@ -1,0 +1,18 @@
+.login-container{
+  background-color: #707070;
+  width: 350px;
+  height: 450px;
+  border-radius: 7px;
+  outline: transparent;
+  
+}
+
+.login-field{
+  margin: 10px;
+  color: white
+}
+
+.login{
+  text-align: right;
+}
+

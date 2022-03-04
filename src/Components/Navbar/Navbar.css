@@ -1,0 +1,37 @@
+.navbar{
+  background-color: #3a3a3a !important
+}
+
+.navbar-body{
+  /* margin: 10px */
+  /* display: inline !important; */
+}
+#admin-logo{
+  cursor: pointer;
+}
+
+.navbar-logo{
+  width: 180px;
+  left: -35px;
+  position: absolute;
+}
+
+.navbar-links-container{
+  /* float: right; */
+  display: inline-flex;
+  position: absolute;
+  right: 20px;
+
+}
+
+.navbar-link{
+  text-decoration: none;
+  font-size: x-large;
+  margin: 15px;
+  color: white;
+  outline: none;
+}
+
+.navbar-link :hover{
+  color: #00E3AA;
+}
