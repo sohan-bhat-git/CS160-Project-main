@@ -11,12 +11,12 @@ import Container from "@material-ui/core/Container";
 import { Alert } from "@material-ui/lab/";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { login } from "../../ApiFunctions/User";
-
+import './login.css'
 import $ from "jquery";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(1),
+    height: '100%',
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -64,7 +64,7 @@ export default function Login(props) {
   
   return (
    
-    <Container component="main">
+    <Container component="main" className="background">
       <CssBaseline />
       <div className={classes.paper}>
         {error ? (
@@ -73,12 +73,12 @@ export default function Login(props) {
           </Alert>
         ) : null}
 
-        <form
+        {/* <form
           id="login-form"
           className={classes.form}
           noValidate
           onSubmit={() => submitHandler({ email, password })}
-        >
+        > */}
           <Grid container spacing={2} xs={12}>
             <Grid item xs={8}>
               <Grid item xs={6} align="center">
@@ -155,7 +155,7 @@ export default function Login(props) {
               </Grid>
             </Grid>
           </Grid>
-        </form>
+        {/* </form> */}
       </div>
     </Container>
     
